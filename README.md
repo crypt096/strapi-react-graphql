@@ -1,1 +1,1 @@
-# strapi-react-graphql
+# Game review webapp using Strapi Headless CMS , React and GraphQL
