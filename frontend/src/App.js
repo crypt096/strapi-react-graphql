@@ -8,6 +8,7 @@ import SiteHeader from './components/SiteHeader';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <SiteHeader/>
       <Switch>
@@ -24,6 +25,7 @@ function App() {
         </Route>
       </Switch>
     </div>
+    </Router>
   );
 }
 
