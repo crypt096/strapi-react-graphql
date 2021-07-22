@@ -19,7 +19,7 @@ function App() {
           <ReviewDetails/>
         </Route>
 
-        <Route path="/category">
+        <Route path="/category/:id">
           <Category/>
         </Route>
       </Switch>
