@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 export default function Homepage() {
     const { loading, error, data } = useFetch('http://localhost:1337/reviews');
 
-    loading && <p>Loading...</p>
+    if (loading) return <p>Loading...</p>
 
-    error && <p>Error: {error}</p>
+    if (error) return <p>Error...</p>
 
     return (
         <div>
@@ -18,7 +18,7 @@ export default function Homepage() {
 
                     <small>console list</small>
 
-                    <p>{review.body}</p>
+                    <p>{review.body.substring(0,200)}...</p>
                     <Link to={`/details/${review.id}`}>Read more...</Link>
                 </div>
             ))}
